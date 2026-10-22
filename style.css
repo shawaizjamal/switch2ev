@@ -1,0 +1,379 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #caf0f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== HEADER STYLES ===== */
+/* Header container with blue background */
+header {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Search bar and button reset styles */
+.searchbar, .searchbutton {
+    all: unset;
+}
+
+/* Search form container styling */
+.searchform {
+    border: 1px solid white;
+    padding: 1px 3px;
+    position: relative;
+    top: 6px;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+/* Navigation bar styling */
+nav {
+    text-align: center;
+    background: #0077b6;
+    padding: 10px;
+}
+
+/* Navigation links styling */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Navigation hover effects */
+nav a:hover {
+    color: #caf0f8 !important; 
+}
+
+/* Navigation underline animation */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #caf0f8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== MAIN CONTENT STYLES ===== */
+/* Main container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 1200px;
+}
+
+/* EV image (Homepage) styling */
+.main-img {
+    width: 100%;
+}
+
+/* EV image (Homepage) container */
+.hero-img {
+    position: relative;
+}
+
+/* Explore More button styling */
+.primary-btn {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.primary-btn:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* More News button styling */
+.secondary-btn {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    bottom: 50px;
+    left: 190px;
+    transform: translate(-50%, -50%);
+}
+
+.secondary-btn:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* ===== INFO BOX/CARD STYLES ===== */
+/* Container for info boxes */
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Individual info box styling */
+.info-boxes .box {
+    width: 28%;
+    height: 20vw;
+    padding: 13px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    justify-content: center;
+}
+
+/* Info box heading */
+.info-boxes .box b {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Info box paragraph */
+.info-boxes .box p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Benefits grid layout */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Individual benefit item */
+.benefit-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ===== TABLE STYLES ===== */
+/* Comparison table styling */
+table {
+    border-collapse: collapse;
+    width: 750px;
+    height: 580px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ===== LAYOUT STYLES ===== */
+/* Section layout for about page */
+.sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.introabout {
+    width: 75%;
+    padding: 20px;
+}
+
+.imageabout {
+    width: 25%;
+    padding: 20px;
+}
+
+/* Image height constraint */
+.img-height {
+    max-height: 280px;
+}
+
+/* ===== CONTACT FORM STYLES ===== */
+/* Contact form button styling */
+.contact-us {
+    background-color: #023e8a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-us:hover {
+    background-color: #fff;
+    color: #023e8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== MODAL STYLES ===== */
+/* Modal dialog styling */
+.modal-header {
+    background-color: #023e8a;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-footer .btn-primary {
+    background-color: #023e8a;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #0077b6;
+}
+
+/* ===== FOOTER STYLES ===== */
+/* Footer styling */
+footer {
+    background-color: #2966AD;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* ===== LOGIN/REGISTRATION STYLES ===== */
+.auth-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.auth-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.auth-toggle-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #023e8a;
+    cursor: pointer;
+    position: relative;
+}
+
+.auth-toggle-btn.active {
+    color: #0077b6;
+}
+
+.auth-toggle-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: #0077b6;
+}
+
+.auth-form .form-control {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+}
+
+.auth-form .form-control:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 0 0.25rem rgba(0, 119, 182, 0.25);
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #0077b6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-switch-link {
+    color: #666;
+    font-size: 14px;
+}
+
+.auth-switch-link a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-switch-link a:hover {
+    text-decoration: underline;
+}

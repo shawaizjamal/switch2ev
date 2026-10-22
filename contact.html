@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page title and external added stylesheets/scripts -->
+    <title>EV Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header containing logo and search bar -->
+    <header>
+        <!-- Logo aligned to the left side -->
+        <div style="Float:left;">
+            <img src="assets/images/Logo.png" height="40px" width="160px" alt="Switch2EV Logo">
+        </div>
+
+        <!-- Search bar aligned to the right side -->
+        <div style="Float:right;">
+            <form class="searchform">
+                <input class="searchbar" type="text" placeholder="Search">
+                <button class="searchbutton">&#128269;</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Navigation bar linking all the pages together -->
+    <nav>
+        <a href="index.html">Home Page</a>
+        <a href="about.html">About Us</a>
+        <a href="ev-info.html">EV & PHEV Info</a>
+        <a href="charging.html">Charging</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="incentives.html">Incentives</a>
+        <a href="login.html">Login / Signup</a>
+    </nav>
+
+    <!-- Starting of Content -->
+    <div class="container-fluid px-5 mt-5 mb-5">
+        <!-- Page heading centered -->
+        <h2 class="fw-bold text-center">Contact Us</h2>
+        <div class="row mt-5">
+            <!-- Left column: FAQ's about EV's -->
+            <div class="col-lg-4">
+                <h4 class="fw-bold">FAQs</h4>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- FAQ Item 1: Charging Time -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                How long does it take to charge an electric vehicle? 
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Charging time depends on the type of charger. 
+                                Level 1 chargers (standard home outlets) can take up to 12 hours, Level
+                                 2 chargers (240V) usually take 4-6 hours, and fast DC chargers can charge
+                                  up to 80% in 30 minutes.</div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2: Driving Range -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                What is the average driving range of an EV?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Most modern EVs can travel between 200 to 400 
+                                kilometers on a single charge, depending on the model, battery size, 
+                                and driving conditions.</div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3: Safety -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Are electric vehicles safe?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Yes, EVs undergo the same safety testing as traditional 
+                                vehicles and often include advanced safety features. Their lower center of gravity 
+                                also provides better stability.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle column: A Contact Image -->
+            <div class="col-lg-4">
+                <img src="assets/images/contact-us-img.jpg" alt="Contact Us Illustration" class="w-100 rounded">
+            </div>
+
+            <!-- Right column: Contact Form for Customers -->
+            <div class="col-lg-4">
+                <div class="contact-form text-start">
+                    <h2 class="fw-bold">Please Fill Out This<br>Form And We Will<br>Get In Touch</h2>
+                    <p class="text-muted">
+                      Thank you for reaching out! We're excited to<br>connect with you and assist in any way we can.<br>Please take a
+                      moment to fill out this form, and our<br>team will get in touch with you as soon as possible.
+                    </p>
+        
+                    <!-- Contact form with validation -->
+                    <form id="contactForm">
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <label for="firstName" class="form-label">Name<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                      </div>
+        
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <label for="email" class="form-label">Your email<span class="text-danger">*</span></label>
+                          <input type="email" class="form-control" id="email" placeholder="e.g. abc@example.com" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="phone" class="form-label">Phone<span class="text-danger">*</span></label>
+                          <input type="tel" class="form-control" id="phone" placeholder="Phone No." required>
+                        </div>
+                      </div>
+        
+                      <div class="mb-3">
+                        <label for="message" class="form-label">Message<span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                      </div>
+        
+                      <button type="submit" class="btn contact-us">Send Us Message</button>
+                    </form>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Success or Failure (hidden by default) -->
+    <div class="modal fade" id="formPopup" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupTitle">Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="popupMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with copyright notice -->
+    <div style="background-color:#023e8a; color: White; clear:both;text-align:center;">
+
+        Switch2EV Copyright © 2025 | All Rights Reserved
+    </div>
+
+    <!-- JavaScript for handling the page -->
+    <script src="assets\js\validation.js"></script>
+</body>
+</html>

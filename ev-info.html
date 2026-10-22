@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page title and external added stylesheets -->
+    <title>EV Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header containing logo and search bar -->
+    <header>
+        <!-- Logo aligned to the left side -->
+        <div style="Float:left;">
+            <img src="assets/images/Logo.png" height="40px" width="160px">
+        </div>
+
+        <!-- Search bar aligned to the right side -->
+        <div style="Float:right;">
+            <form class="searchform">
+                <input class="searchbar" type="text" placeholder="Search">
+                <button class="searchbutton">&#128269;</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Navigation bar linking all the pages together -->
+    <nav>
+        <a href="index.html">Home Page</a>
+        <a href="about.html">About Us</a>
+        <a href="ev-info.html">EV & PHEV Info</a>
+        <a href="charging.html">Charging</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="incentives.html">Incentives</a>
+        <a href="login.html">Login / Signup</a>
+    </nav>
+
+    <!-- Starting of Content -->
+    <div class="container-fluid px-5 mt-5">
+        <!-- Page heading centered -->
+        <h2 class="fw-bold text-center">EV and PHEV Information</h2>
+        <div class="row mt-5">
+            <!-- Left column: How EVs & PHEVs work with an EV Image at end -->
+            <div class="col-lg-4">
+                <h4 class="fw-bold">How EVs & PHEV Work</h4>
+                <p>Batteries are the only source of electricity used by electric vehicles (EVs). Instead 
+                    of using a normal engine, these batteries power an electric motor. Plug-in hybrid 
+                    electric cars, or PHEVs, contains characteristics of both, gasoline vehicles and 
+                    electric vehicles. They have a gasoline engine for longer journeys and an electric 
+                    motor that runs on batteries for shorter ones. As EVs, PHEVs can be charged by 
+                    plugging in, and they are also able to switch between both, gasoline and electricity,
+                    when needed. For daily transportation, this dual-system method provides the advantages
+                    of electric driving, while for longer trips, it delivers the range of a gasoline-powered
+                    vehicle.
+                </p>
+
+                <img src="assets/images/ev-benefits.avif" alt="EV benefits illustration" class="w-100">
+            </div>
+
+            <!-- Right column: Comparison table -->
+            <div class="col-lg-4">
+                <h4 class="fw-bold">Comparison Table</h4>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>EV (Electric Vehicle)</th>
+                        <th>Petrol (Gasoline)</th>
+                        <th>Hybrid (PHEV)</th>
+                    </tr>
+                    <tr>
+                        <td>Fuel Source</td>
+                        <td>Electricity</td>
+                        <td>Gasoline</td>
+                        <td>Both</td>
+                    </tr>
+                    <tr>
+                        <td>Emissions</td>
+                        <td>Zero (tailpipe)</td>
+                        <td>High</td>
+                        <td>Low (variable)</td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Cost</td>
+                        <td>Lower</td>
+                        <td>Higher</td>
+                        <td>Variable</td>
+                    </tr>
+                    <tr>
+                        <td>Maintenance</td>
+                        <td>Lower</td>
+                        <td>Higher</td>
+                        <td>Complex</td>
+                    </tr>
+                    <tr>
+                        <td>Overall Cost</td>
+                        <td>Higher Initial</td>
+                        <td>Lower Initial</td>
+                        <td>Mid-Range</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Benefits of EV section -->
+    <div class="container-fluid px-5 mt-5">
+        <!-- Section heading centered -->
+        <h2 class="fw-bold text-center">Benefits Of EV</h2>
+    </div>
+    
+    <!-- Three benefit text boxes -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <!-- Box 1: Low Maintenance Cost -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="assets/images/low maintenence cost.jpeg" class="card-img-top img-height" alt="Low maintenance cost illustration">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Low Maintenance Cost</h5>
+                    <p class="card-text">As there are less moving parts, electric vehicles (EVs) do not 
+                        require complicated transmission repairs, spark plug replacements, or oil changes.
+                         For EV owners, this means significantly less long-term maintenance expenses.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Box 2: Tax Incentives & Savings -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="assets/images/goven-incentives.jpg" class="card-img-top img-height" alt="Tax incentives illustration">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Tax Incentives & Savings</h5>
+                    <p class="card-text">Governments reduce the initial cost of EVs by providing a range 
+                        of financial incentives, such as tax credits and refunds. If we compare EVs with 
+                        reduced fuel and maintenance costs, they provide significant long-term savings.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Box 3: Eco Friendly -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="assets/images/eco friendly.jpeg" class="card-img-top img-height" alt="Eco friendly illustration">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Eco Friendly</h5>
+                    <p class="card-text">As EVs produce no harmful gases, the air is cleaner and the 
+                        environment is healthier. EVs contribute heavily to climate change prevention 
+                        and green transportation by decreasing the need for fossil fuels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+               
+    <!-- Footer with copyright notice -->
+    <div style="background-color:#023e8a; color: White; clear:both;text-align:center;">
+
+        Switch2EV Copyright © 2025 | All Rights Reserved
+    </div>
+</body>
+</html>
