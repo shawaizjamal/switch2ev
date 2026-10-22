@@ -97,7 +97,7 @@ Possible future improvements include:
 
 ## Live Demo
 
-Live demo coming soon.
+[View the live Switch2EV website](https://shawaizjamal.github.io/switch2ev/)
 
 ## Author
 
